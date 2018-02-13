@@ -9,10 +9,8 @@ class ATM:
         print "=================================="
         if   request > self.balance:
             print("Can't give you all this money !!")
-            print "=================================="
         elif request < 0:
             print("More than zero plz!")
-            print "=================================="
         else:
             r = request
             while request > 0:
@@ -31,8 +29,8 @@ class ATM:
                 elif request < 5:
                     print("give " + str(request))
                     request = 0
-            print "=================================="
             self.balance = self.balance - r
+        print "=================================="
 
 
 balance1 = 500
